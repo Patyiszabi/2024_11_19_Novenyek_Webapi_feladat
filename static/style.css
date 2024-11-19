@@ -31,16 +31,10 @@ a:active{
     cursor: progress;
 }
 
-a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
 h1{
     text-align: center;
 }
+
 h1:hover{
     cursor: default;
 }
@@ -51,3 +45,9 @@ img{
     display: block;
 }
 
+#links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
