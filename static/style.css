@@ -8,6 +8,7 @@ th{
 
   td{
     text-align: center;
+    cursor: default;
   }
 
   table{
@@ -16,18 +17,25 @@ th{
     border-collapse: collapse;
   }
 
-  tr:hover {
+  td:hover {
     background-color: rgb(12, 204, 53);
 }
 
 a:hover{
     background-color: rgb(12, 204, 53);
+    cursor: pointer;
+}
+
+a:active{
+    background-color: rgb(33, 223, 33);
+    cursor: progress;
 }
 
 a{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 h1{
