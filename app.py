@@ -13,7 +13,7 @@ def index():
 
 @app.route('/tabla', methods=["GET"])
 def table():
-    return render_template('', orders=orders)
+    return render_template('tabla.html', plants=plants)
 
 if __name__ == "__main__":
     app.run(debug=True)
