@@ -12,22 +12,17 @@
           <th>Típus</th>
           <th>Jellezmző</th>
         </tr>
+        {% for plant in plants %}
         <tr>
-          <td>Monstera</td>
-          <td>Szobanövény</td>
-          <td>Nagyméretű levelek</td>
+          <td>{{ plant.name }}</td>
+          <td>{{ plant.type }}</td>
+          <td>{{ plant.feature }}</td>
         </tr>
-        <tr>
-          <td>Bambusz</td>
-          <td>Dísznövény</td>
-          <td>Gyors növekedés</td>
-        </tr>
-        <tr>
-          <td>Kaktusz</td>
-          <td>Pozsgás</td>
-          <td>Szárazságtűrő</td>
-        </tr>
+        {% endfor %}
       </table>
+      <br>
+
+      <a href="/">Vissza a főoldalra</a>
     
 </body>
 </html>
