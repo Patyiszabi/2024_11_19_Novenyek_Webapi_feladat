@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Táblázatos oldal</title>
 </head>
 <body>
@@ -14,9 +15,9 @@
         </tr>
         {% for plant in plants %}
         <tr>
-          <td>{{ plant.name }}</td>
-          <td>{{ plant.type }}</td>
-          <td>{{ plant.feature }}</td>
+            <td>{{ plant.name }}</td>
+            <td>{{ plant.type }}</td>
+            <td>{{ plant.feature }}</td>
         </tr>
         {% endfor %}
       </table>
