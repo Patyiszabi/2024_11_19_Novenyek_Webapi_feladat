@@ -11,8 +11,8 @@ plants = [
 def index():
     return render_template('index.html')
 
-@app.route('/', methods=["GET"])
-def order_summary():
+@app.route('/tabla', methods=["GET"])
+def table():
     return render_template('', orders=orders)
 
 if __name__ == "__main__":
